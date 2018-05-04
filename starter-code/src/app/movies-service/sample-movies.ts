@@ -1,4 +1,17 @@
-[
+export class Movie {
+  constructor(
+    public id: number,
+    public title: string,
+    public poster: string,
+    public synopsis: string,
+    public genres: Array<string>,
+    public year: number,
+    public director: string,
+    public actors: Array<string>       
+  ){ }
+}
+
+export const MoviesCollection = [
   {
     id: 1,
     title: "The Shawshank Redemption",
@@ -72,7 +85,6 @@
       "Gary Oldman"
     ]
   }, {
-  {
     id: 5,
     title: "Schindler's List",
     poster: "https://i.imgur.com/IWZJOmu.jpg",
